@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Muhtarom</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Logo icon & Navigasi bar -->
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-icon"></div>
+
+        <!-- Navigasi -->
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-profile">Profile</a>
+            <a href="#section-portfolio">Portfolio</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+    
+
+    <hr />
+
+    <!-- Konten -->
+    <main>
+        <!-- Section Home -->
+        <section id="section-home">
+            <header>
+                <h1>Hi User, Welcome to My Website</h1>
+            </header>
+
+            <article>
+                <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
+
+                <!-- Photo Banner -->
+                <div class="photo-banner photo-1"></div>
+                <div class="photo-banner photo-2"></div>
+                <div class="photo-banner photo-3"></div>
+            </article>
+
+            <button type="button" onclick="nextSlide(-1)">Prev</button>
+            <button type="button" onclick="nextSlide(1)">Next</button>
+        </section>
+
+        <hr />
+
+        <!-- Section Profile -->
+        <section id="section-profile">
+            <header>
+                <h1>Profile</h1>
+            </header>
+
+            <article>
+                <div class="article"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Section Portfolio -->
+        <section id="section-portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+
+            <article>
+                <div class="article"></div>
+            </article>
+        </section>
+
+        <hr />
+
+        <!-- Section Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <div class="message-container">
+                <form>
+                    <div>
+                        <label for="input-username">Username:</label>
+                        <input id="input-username" type="text" />
+                    </div>
+
+                    <button type="button" onclick="validateForm()">Submit</button>
+                </form>
+
+                <div>
+                    <p>Result: <span id="result"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr />
+
+    <!-- Copyright -->
+    <footer>
+        <div>Made by Muhtarom@2024</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
